@@ -1,0 +1,1 @@
+asks the user for the pole lap (the fastest lap) and asks for their lap time. Thjen calculates the difference and outputs a message saying "x seconds was the gap to pole" 
