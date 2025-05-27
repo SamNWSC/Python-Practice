@@ -1,6 +1,6 @@
 import random
 
-# Defines questions and answers and score
+# Defines questions and answers and score, questions and correct_answers can be changed out for other questions 
 score = 0
 questions = ["x", "y", "z"]
 correct_answers = {"x": "a", "y": "b", "z": "c"}
@@ -9,7 +9,7 @@ correct_answers = {"x": "a", "y": "b", "z": "c"}
 
 for i in questions:
     question = random.choice(questions)
-    user_answer = input(f"What's the answer to '{question}'? ").strip().lower()
+    user_answer = input("What's the answer to '{}'? ".format(question)).strip().lower()
     # Checks if they got th answer right 
     if user_answer == correct_answers.get(question, ""):
         print("Good Job")
