@@ -36,8 +36,11 @@ while playing:
             
     
     print("Score: {}".format(score))
+    score = 0
     playing_status = input("Are you still playing? (Y/N): ").strip().lower()
     if playing_status == "n":
         playing = False
+        
 
 print("Thank You for playing")
+quit()
